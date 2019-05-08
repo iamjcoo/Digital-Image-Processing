@@ -14,7 +14,7 @@ h3 = int(h/3)
 maxh = int(h3+h3)
 maxw = int(w4*3)
 
-# iterate over the entire image and add red border.
+# iterate over the entire image and add create filled box.
 for py in range(0, h):
     for px in range(0, w):
         if (px > w4 and py > h3) and (px < maxw and py < maxh):
@@ -22,6 +22,7 @@ for py in range(0, h):
                 img[py][px][1] = 0
                 img[py][px][2] = 255
 
+# iterate over the entire image and add bordered box.
 for py in range(0, h):
     for px in range(0, w):
         if ((py >= h3 and py <= maxh)and(px>=w4 and px<=maxw)):
