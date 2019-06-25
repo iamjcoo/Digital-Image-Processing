@@ -1,0 +1,1 @@
+NOTE: Install Python and Open CV to compile this code
